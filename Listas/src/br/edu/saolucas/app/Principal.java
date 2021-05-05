@@ -1,6 +1,8 @@
 package br.edu.saolucas.app;
 
+import br.edu.saolucas.listas.Aluno;
 import br.edu.saolucas.listas.ListaAluno;
+import br.edu.saolucas.listas.ListaLigada;
 
 public class Principal {
 
@@ -22,6 +24,17 @@ public class Principal {
 		ListaAluno alunoD= new ListaAluno("Maria", 19);
 		
 		ListaAluno alunoC = new ListaAluno("Beatriz", 17, alunoD);
+		
+		
+		
+		
+		ListaLigada listaLigada = new ListaLigada();
+		
+		Aluno aluno = new Aluno("Alberto", 17);
+		
+		listaLigada.adiciona(aluno);
+		
+		System.out.println(listaLigada.toString());
 		
 	}
 
